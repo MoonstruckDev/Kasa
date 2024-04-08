@@ -1,5 +1,5 @@
 // IMPORTS
-import './about.css'
+import './about.scss'
 
 // COMPONENTS
 import Collapse from '../../components/Collapse/Collapse'

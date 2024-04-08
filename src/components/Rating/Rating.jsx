@@ -1,5 +1,5 @@
 // IMPORTS
-import './rating.css';
+import './rating.scss';
 
 // ASSETS
 import StarActive from '../../assets/star-active.png';

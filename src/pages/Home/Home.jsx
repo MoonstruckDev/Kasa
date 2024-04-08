@@ -1,5 +1,5 @@
 // IMPORTS
-import './home.css'
+import './home.scss'
 
 // ASSETS
 import Banner from '../../assets/banner-home.png'

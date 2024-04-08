@@ -17,12 +17,13 @@
    position: absolute;
    color: white;
    font-family: 'Montserrat';
-   font-size: 35px;
+   font-size: 27px;
    font-weight: 700;
-   
-   @media (max-width: 1001px) {
-      font-size: 18px;
-   }
+   text-align: center;
+
+   @media (max-width: 429px) {
+      font-size: 20px;
+  }              
 }
 
 .BannerImg {

@@ -1,6 +1,6 @@
 // IMPORTS
 import { Link } from 'react-router-dom'
-import './error.css' 
+import './error.scss' 
 
 
 

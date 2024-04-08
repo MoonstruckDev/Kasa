@@ -1,6 +1,6 @@
 // IMPORTS
 import { useState } from 'react'
-import './Collapse.css'
+import './Collapse.scss'
 
 // ASSETS
 import ArrowDown from '../../assets/arrow-down.png'
