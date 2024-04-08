@@ -17,11 +17,11 @@ function Header() {
          </Link>
 
          <div>
-            <NavLink to="/" className='StyledLink'>
+            <NavLink to="/" className='StyledLink' activeClassName="active">
                Accueil
             </NavLink>
 
-            <NavLink to="/about" className='StyledLink'>
+            <NavLink to="/about" className='StyledLink' activeClassName="active">
                À Propos
             </NavLink>
          </div>
