@@ -7,13 +7,15 @@
       font-size: 17px;
       padding: 0 0 0 15px;
    }
+
+   &.active:hover {
+      filter: brightness(0.9);
+   }
+   &.active {
+      text-decoration: underline;
+   }
 }  
-.StyledLink.active:hover {
-   filter: brightness(0.9);
-}
-.StyledLink.active {
-   text-decoration: underline;
-}
+
 
 
 .ContHeader {

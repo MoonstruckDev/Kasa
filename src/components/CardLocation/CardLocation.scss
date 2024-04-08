@@ -22,15 +22,18 @@
    height: 340px;
    margin: 30px;
    transition: 0.2s;
+   
    @media (max-width: 1001px) {
       width: 85vw;
       height: 250px;
    }
-}
 
-.ContCard:hover {
+   &:hover {
       scale: 1.05;
 }
+}
+
+
 
 .ImgLocation {
    object-fit: cover;

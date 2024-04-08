@@ -5,25 +5,26 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   
    @media (max-width: 1001px) {
       height: 150px;
       margin: 0 0;
    }
-}
 
-.BannerCont::after {
-   content: "Chez vous, partout et ailleurs";
-   z-index: 1;
-   position: absolute;
-   color: white;
-   font-family: 'Montserrat';
-   font-size: 27px;
-   font-weight: 700;
-   text-align: center;
-
-   @media (max-width: 429px) {
-      font-size: 20px;
-  }              
+   &::after {
+      content: "Chez vous, partout et ailleurs";
+      z-index: 1;
+      position: absolute;
+      color: white;
+      font-family: 'Montserrat';
+      font-size: 27px;
+      font-weight: 700;
+      text-align: center;
+   
+      @media (max-width: 429px) {
+         font-size: 20px;
+     }              
+   }
 }
 
 .BannerImg {
