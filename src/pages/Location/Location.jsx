@@ -55,7 +55,7 @@ function Logement() {
          <section className='ContInfo'>
 
             <div className='ContInfoLogement'>
-               <h1 className='TittleInfo'>{logement.title}</h1>
+               <h1 className='TitleInfo'>{logement.title}</h1>
                <p className='TextInfo'>{logement.location}</p>
                <ul className='TagUl'>
                   {logement.tags.map(tag => (
