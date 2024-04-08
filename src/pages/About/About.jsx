@@ -9,7 +9,7 @@ import Banner from '../../assets/banner-about.png'
 import data from '../../assets/collapse.json'
 
 
-// Page About > Contient une bannière et le composant Collapsehome
+// About page
 function About() {
    return (
       <section>

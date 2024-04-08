@@ -14,12 +14,12 @@ import DataLocation from '../../assets/location.json';
 
 
 
-// Page Logement > Contient le Composant Slider, compo Rating et le composant Collapsedescription ainsi que les infos du logement et du propriétaire
+// The page for the houses
 function Logement() {
    const [logement, setLogement] = useState(null); 
-   const { id } = useParams(); // Récupère l'id du logement dans l'url
+   const { id } = useParams(); // gets the id of the house in the url
 
-   useEffect(() => {  // Récupère les infos du logement en fonction de l'id
+   useEffect(() => {  // Gets the information based on ID
       const data = DataLocation.find(location => location.id === id);
       if (data) {
       setLogement(data);
@@ -28,11 +28,11 @@ function Logement() {
    }
    }, [id]);
 
-   if (!logement) { // Si l'id n'existe pas, affiche la page d'erreur
+   if (!logement) { // If the ID doesn't exist return error
       return (<Error />);
    }
 
-   // Crréer un JSON pour le passer en props au composant Collapsehome
+   // Create a json to pass it to the collapsehome
    const data = [
       {
          title: 'Description',
@@ -40,7 +40,6 @@ function Logement() {
       },
       {
          title: 'Equipements',
-         // Créer une liste avec les équipements
          text: logement.equipments.map(equipment => (
             <p className='TextCollapse' key={equipment}>{equipment}</p>
          ))

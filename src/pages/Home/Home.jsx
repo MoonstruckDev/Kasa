@@ -9,7 +9,7 @@ import Cardlocation from '../../components/CardLocation/Cardlocation'
 
 
 
-// Page d'acceuil > Contient une bannière et le composant Cardlocation
+// Home page
 function Home() {
    return (
       <section>

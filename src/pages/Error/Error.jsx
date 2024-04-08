@@ -4,7 +4,7 @@ import './error.css'
 
 
 
-// Page erreur 404
+// Page error 404
 function Error() {
    return (
       <section className='ContError'>

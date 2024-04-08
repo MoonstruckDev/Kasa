@@ -19,7 +19,8 @@ import './style/app.css';
 
 
 
-// Routes de l'application // Layouts de l'application
+// Application Routes 
+// Layouts
 function App() {
 
   return (

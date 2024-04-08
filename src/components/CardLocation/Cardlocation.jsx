@@ -6,7 +6,7 @@ import './CardLocation.css'
 import DataLocation from '../../assets/location.json'
 
 
-// Composant CardLocation > Génère des cards avec les images des locations, dynamiquement depuis le fichier JSON
+// Generates cards based on the json 
 function Cardlocation() {
    return (
       <section className='ContLocation'>
