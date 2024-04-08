@@ -65,7 +65,7 @@ function Logement() {
             </div>
 
             <div className='ContInfoOwner'>
-               <div className='TEST'>
+               <div className='OwnerContainer'>
                   <p className='TextInfoOwner'>{logement.host.name}</p>
                   <img className='ImgOwner' src={logement.host.picture} alt={logement.host.name} />
                </div>
