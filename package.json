@@ -1,7 +1,7 @@
 {
   "name": "kasa-p8",
   "version": "0.1.0",
-  "homepage": "https://moonstruckdev.github.io/Kasa",
+  "homepage": "https://kasa.moonstruck.pro",
   "private": true,
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
@@ -17,7 +17,6 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
