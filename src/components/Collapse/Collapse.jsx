@@ -30,8 +30,8 @@ function Collapse({ data }) {
     <div className={containerClass}>
       {data.map((collapse, index) => (
         <div className="ContCollapse" key={index}>
-          <div className="TittleCont" onClick={() => toggleCollapse(index)}>
-            <h3 className='TittleCollapse'>{collapse.title}</h3>
+          <div className="TitleCont" onClick={() => toggleCollapse(index)}>
+            <h3 className='TitleCollapse'>{collapse.title}</h3>
             {openIndexes.includes(index) ? (
               <img src={ArrowUp} alt="Arrow" />
             ) : (

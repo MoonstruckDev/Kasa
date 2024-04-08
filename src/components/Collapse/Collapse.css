@@ -6,7 +6,7 @@
    width: 100%;
 
 }
-.TittleCont {
+.TitleCont {
    background-color: #FF6060;
    padding: 10px 20px;
    border-radius: 5px;
@@ -15,7 +15,7 @@
    align-items: center;
    cursor: pointer;
 }
-.TittleCollapse {
+.TitleCollapse {
    font-weight: 500;
    margin: 0;
    color: white;
