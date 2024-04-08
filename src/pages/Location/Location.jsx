@@ -1,7 +1,7 @@
 // IMPORTS
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import './location.css';
+import './location.scss';
 
 // COMPONENTS
 import Error from '../../pages/Error/Error';

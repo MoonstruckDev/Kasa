@@ -15,7 +15,7 @@ import Footer from './layouts/Footer/Footer';
 
 
 // GLOBAL STYLES
-import './style/app.css';
+import './style/app.scss';
 
 
 
