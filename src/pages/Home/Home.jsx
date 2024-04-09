@@ -3,7 +3,6 @@ import './home.scss'
 
 // ASSETS
 import Banner from '../../assets/banner-home.png'
-
 // COMPONENTS
 import Cardlocation from '../../components/CardLocation/Cardlocation'
 

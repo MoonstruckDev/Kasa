@@ -3,4 +3,8 @@
    height: 223px;
    object-fit: cover;
    border-radius: 30px;
+
+   & > img, img {
+      filter: brightness(0.5);
+   }
 }
