@@ -3,24 +3,19 @@ import { useState } from 'react'
 import './Collapse.scss'
 
 // ASSETS
-import ArrowDown from '../../assets/arrow-down.png'
-import ArrowUp from '../../assets/arrow-up.png'
-
+import Arrow from '../../assets/arrow.png'
 
 function Collapse({ data }) {
   const [openIndexes, setOpenIndexes] = useState([])
 
   const toggleCollapse = (index) => {
-    const currentIndex = openIndexes.indexOf(index)
-    const newOpenIndexes = [...openIndexes]
-
-    if (currentIndex === -1) {
-      newOpenIndexes.push(index)
-    } else {
-      newOpenIndexes.splice(currentIndex, 1)
-    }
-
-    setOpenIndexes(newOpenIndexes)
+    setOpenIndexes((prevOpenIndexes) => {
+      if (prevOpenIndexes.includes(index)) {
+        return prevOpenIndexes.filter((i) => i !== index)
+      } else {
+        return [...prevOpenIndexes, index]
+      }
+    })
   }
 
   const numCollapses = data.length
@@ -32,16 +27,17 @@ function Collapse({ data }) {
         <div className="ContCollapse" key={index}>
           <div className="TitleCont" onClick={() => toggleCollapse(index)}>
             <h3 className='TitleCollapse'>{collapse.title}</h3>
-            {openIndexes.includes(index) ? (
-              <img src={ArrowUp} alt="Arrow" />
-            ) : (
-               <img src={ArrowDown} alt="Arrow" />
-            )}
+            <img
+              src={Arrow}
+              alt="Arrow"
+              style={{ transform: openIndexes.includes(index) ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}
+              className="Arrow"
+            />
           </div>
           
-          {openIndexes.includes(index) && (
-            <div className="TextCollapse">{collapse.text}</div>
-          )}
+          <div className={`TextCollapse ${openIndexes.includes(index) ? 'TextCollapseOpen' : ''}`}>
+            {collapse.text}
+          </div>
         </div>
       ))}
     </div>

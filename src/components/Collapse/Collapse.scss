@@ -24,12 +24,22 @@
 .TextCollapse {
    background-color: #F6F6F6;
    font-weight: 300;
-   padding: 30px 20px;
+   padding: 0;
    margin: 0;
    color: black;
    font-size: 17px;
-}
-
+   overflow: hidden;
+   transition: height 0.5s ease, opacity 0.5s ease;
+   height: 0;
+   opacity: 0;
+ }
+ 
+ .TextCollapseOpen {
+   padding: 30px 20px;
+   height: auto;
+   opacity: 1;
+ }
+ 
 .TextCollapse p {
    padding: 0 0 5px 0;
 }
