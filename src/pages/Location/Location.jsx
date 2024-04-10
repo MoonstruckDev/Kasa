@@ -41,7 +41,7 @@ function Logement() {
       {
          title: 'Equipements',
          text: logement.equipments.map(equipment => (
-            <p className='TextCollapse' key={equipment}>{equipment}</p>
+            <p className='TextCollapse TextCollapseOpen' key={equipment}>{equipment}</p>
          ))
       }
    ]

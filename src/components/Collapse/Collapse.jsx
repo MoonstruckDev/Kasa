@@ -30,7 +30,7 @@ function Collapse({ data }) {
             <img
               src={Arrow}
               alt="Arrow"
-              style={{ transform: openIndexes.includes(index) ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}
+              style={{ transform: openIndexes.includes(index) ? 'rotate(0deg)' : 'rotate(180deg)', transition: 'transform 0.3s ease' }}
               className="Arrow"
             />
           </div>
