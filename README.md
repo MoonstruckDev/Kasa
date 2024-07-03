@@ -1,7 +1,7 @@
 # Kasa
 Project 6 OpenClassrooms
 
-![Real Estate Rental](https://img.shields.io/badge/Location%20immobilière-kasa-red)
+![Real Estate Rental](https://img.shields.io/badge/Housing%20Agency-kasa-red)
 
 Development of a real estate rental website using React
 
