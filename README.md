@@ -29,9 +29,6 @@ Development of a real estate rental website using React
 5. Finally, `yarn start` to launch the application
 6. If you encounter issues with __yarn__, try `npm install` then `npm run start`
 
-## How to View the Hosted Version
-
-Follow this link: https://kasa.moonstruck.pro
 
 ## How to Contact Me
 
